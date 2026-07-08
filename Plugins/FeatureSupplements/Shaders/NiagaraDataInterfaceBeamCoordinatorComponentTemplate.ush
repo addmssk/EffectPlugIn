@@ -1,0 +1,54 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+
+uint			{ParameterName}_Valid;
+float			{ParameterName}_Progress;
+float			{ParameterName}_ElapsedSecs;
+float			{ParameterName}_Duration;
+float			{ParameterName}_TargetWidth;
+float3			{ParameterName}_TargetLocation;
+float3			{ParameterName}_TargetMoveDirection;
+
+void GetProgress_{ParameterName}(out bool bOutValid, out float OutProgress)
+{
+	bOutValid = {ParameterName}_Valid != 0;
+	OutProgress = {ParameterName}_Progress;
+}
+
+void GetElapsedSecs_{ParameterName}(out bool bOutValid, out float OuElapsedSecs)
+{
+	bOutValid = {ParameterName}_Valid != 0;
+	OutElapsedSecs = {ParameterName}_ElapsedSecs;
+}
+
+void GetDuration_{ParameterName}(out bool bOutValid, out float OutDuration)
+{
+	bOutValid = {ParameterName}_Valid != 0;
+	OutDuration = {ParameterName}_Duration;
+}
+
+void GetTargetWidth_{ParameterName}(out bool bOutValid, out float OutWidth)
+{
+	bOutValid = {ParameterName}_Valid != 0;
+	OutWidth = {ParameterName}_TargetWidth;
+}
+
+void GetTargetLocation_{ParameterName}(out bool bOutValid, out float3 OutTargetLocation)
+{
+	bOutValid = {ParameterName}_Valid != 0;
+	OutTargetLocation = {ParameterName}_TargetLocation;
+}
+
+void GetTargetMoveDirection_{ParameterName}(out bool bOutValid, out float3 OutTargetMoveDirection)
+{
+	bOutValid = {ParameterName}_Valid != 0;
+	OutTargetLocation = {ParameterName}_TargetMoveDirection;
+}
+
+void GetTargetLocationAndMoveDirection_{ParameterName}(out bool bOutValid, out float3 OutTargetLocation, out float3 OutTargetMoveDirection)
+{
+	bOutValid = {ParameterName}_Valid != 0;
+	OutTargetLocation = {ParameterName}_TargetLocation;
+	OutTargetMoveDirection = {ParameterName}_TargetMoveDirection;
+}
+
+
