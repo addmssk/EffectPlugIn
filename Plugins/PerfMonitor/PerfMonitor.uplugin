@@ -1,0 +1,21 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "0.1.0",
+	"FriendlyName": "PerfMonitor",
+	"EngineVersion": "5.8.0",
+	"Description": "Project-agnostic realtime performance and platform-metric monitoring: per-frame engine metrics, thermal/battery/memory samplers, and constraint-ledger controlled parameters with cause provenance.",
+	"Category": "Performance",
+	"CreatedBy": "",
+	"CreatedByURL": "",
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "PerfMonitor",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
